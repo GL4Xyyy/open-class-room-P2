@@ -1,0 +1,133 @@
+html, body{
+    margin: 0 auto;
+    margin-left: 60px;
+    max-width: 1650px;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+head{
+    margin-right: 60px
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1360px 260px;
+    margin-top: -8px;
+}
+
+#img-logo-reservia{
+    width: 141px;
+    height: 66px;
+    grid-area: logo;
+    object-fit: scale-down;
+    height: 3.5em;
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+header{
+    height: 80px;
+    margin-top: -8px;
+}
+
+ul{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hbg{
+    padding-top: 40px;
+    text-align: center;
+    width: 141px;
+    height: 100%;
+}
+
+.hbg:hover{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    font-weight: 600;
+    background-position: top 
+}
+
+.act{
+    padding-top: 40px;
+    text-align: center;
+    width: 141px;
+    height: 100%;
+}
+
+.act:hover{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none
+}
+
+.ins{
+    color: #0065FC;
+    font-weight: 600;
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+    width: 141px;
+    height: 100%;
+}
+
+.ins:hover{
+    background-color: #0065FC;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-width: 2em;
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+    width: 141px;
+    height: 100%;
+}
+
+.logo-gps{ 
+    position: relative;
+    height: 55px;
+    background-color: #F2F2F2;
+    width: 5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;    
+    font-size: 25px;
+    vertical-align: inline-block;
+    line-height: 55px;
+    background-position: left
+}
+    
+."fas fa-map-marker-alt"{
+    vertical-align: inline-block;
+}
+
+#searching{
+    vertical-align: inline-block;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
