@@ -1,89 +1,68 @@
-html, body{
-    margin: 0 auto;
-    margin-left: 60px;
-    max-width: 1650px;
-    font-size: 100%;
-    font-family: 'Raleway'
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
-head{
-    margin-right: 60px
-}
+
 a {
     text-decoration: none;
     color: black;
 }
 
-main{
-    padding-left: 35px;
-    padding-right: 35px;
-}
+/* Header */
 
-nav{
-    display: grid;
-    grid-template-columns: 1360px 260px;
-    margin-top: -8px;
+header{
+    display: flex; 
+    justify-content: space-between;
 }
 
 #img-logo-reservia{
-    width: 141px;
-    height: 66px;
-    grid-area: logo;
-    object-fit: scale-down;
     height: 3.5em;
-    margin-top: 30px;
-    padding-left: 25px;
-}
-
-header{
-    height: 80px;
-    margin-top: -8px;
+    padding-top: 20%;
 }
 
 ul{
-    margin-top: 8px;
+    margin-left: auto;
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: auto
 }
 
 .hbg{
-    padding-top: 40px;
     text-align: center;
     width: 141px;
     height: 100%;
+    padding-top: 30%
 }
 
 .hbg:hover{
     border-top: 3px solid #0065FC;
     color: #0065FC;
     font-weight: 600;
-    background-position: top 
 }
 
 .act{
-    padding-top: 40px;
     text-align: center;
     width: 141px;
     height: 100%;
+    padding-top: 30%
 }
 
 .act:hover{
     border-top: 3px solid #0065FC;
     color: #0065FC;
     font-weight: 600;
-}
-
-ul {
-    list-style: none
+    background-position: top;
 }
 
 .ins{
     color: #0065FC;
     font-weight: 600;
     width: 100%;
-    padding-top: 40px;
     text-align: center;
     width: 141px;
     height: 100%;
+    padding-top: 30%
 }
 
 .ins:hover{
@@ -92,31 +71,36 @@ ul {
     border-bottom-right-radius: 25px;
     border-top-width: 2em;
     color: white;
-    padding-top: 40px;
     text-align: center;
     width: 141px;
     height: 60%;
+    background-position: top 
 }
 
+
+/* Présentation */
+
 h1{
+    display: flex;
     font-size: 150%;
-    font-weight: 900;
+    font-weight: 800;
 }
 #presentation, p{
     font-size: 105%;
 }
 
+/* Search */
+
 .logo-gps{ 
-    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
     height: 55px;
     background-color: #F2F2F2;
     width: 55px;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    text-align: center;    
+    border-bottom-left-radius: 20px;    
     font-size: 20px;
-    line-height: 55px;
-    background-position: left;
 }
 
 #searching{
@@ -134,10 +118,8 @@ h1{
 .monBoutton{
     background-color: #0065FC;
     color:white;
-    display:block;
     width:150px;
     text-align:center;
-    vertical-align:middle;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 55px;
@@ -151,100 +133,88 @@ input::placeholder{
     font-weight: bold
 }
 
+/* Filters */
+
 #filters{
     display: flex;
     align-items: center;
-    justify-content: start;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 30px;
-    flex-wrap: wrap;
 }
 
-.filters-all {
-    right: 50%;
+#filters h3{
+    margin-right: 50px;
+}
+#filters-all {
     display: flex;
     justify-content: space-between;
-    width: 950px;
+    flex-wrap: wrap;
+    width: 800px;
 }
-#filters,button{
+
+.button{
     display: flex;
     align-items: center;
     background-color: white;
     height: 55px;
     border-radius: 50px;
-    outline: none;
     font-weight: bold;
-    padding-right: 15px;
-    white-space: nowrap;
-    transition: transform .2s;
-    margin-right: 20px;
-    right: 50%;
+    border: 2px lightgrey solid;
 }
 .button:hover{
     background-color:#DEEBFF;
     border: 2px #DEEBFF solid;
-    transform: scale(1.10);
 }
 .logo-filter{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #DEEBFF;
-    border-radius: 50%;
-    height: 54px;
-    width: 54px;
-    margin-left: -10px;
+    border-radius: 100%; 
+    margin-left: -7px;
+    width: 55px;
+    height: 55px;
 }
 
 .icon{
-    position: absolute;
     color:#0065FC;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}
-
-
-.button{
-     border: 2px lightgrey solid;
+    font-size: large;
 }
 
 .button span{
     font-size: 1.2rem;
-    margin-right: 10px;
 }
 
 #filters-title{
-    font-weight: 900;
+    font-weight: 800;
     font-size: 23px;
-    margin-right: 40px;
+}
+
+/* Info */
+
+.info1{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .icon-info{
-    position: absolute;
+    display: flex;   
+    align-items: center;
+    justify-content: space-evenly;
     height: 25px;
     width: 25px;
-    border: #F2F2F2 2px solid;
     border-radius: 50%;
-    background-color: white;
-    margin-right: 10px;
-}
-
-.fa-info{
-    position:absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
     color:#0065FC;
+    border: #F2F2F2 2px solid;
+   
 }
 
+.text p{
+    margin-left: 10px
+}
 
-
-
-
-
-
-
-
-
-    
 
 

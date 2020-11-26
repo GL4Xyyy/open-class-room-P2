@@ -6,22 +6,21 @@
         
         <script src="https://kit.fontawesome.com/f6586af89b.js" crossorigin="anonymous"></script>
         
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         
         <title>Réservia - Trouvez votre hébergement pour des vacances de rêves</title>
     </head>
     
     <body>
         <header>
-            <nav>
+            
                     <div class="logo"><a href="#"><img id="img-logo-reservia" src="images/logo/Reservia@3x.png" alt="Logo de Réservia" ></a></div>
-                        
+                <nav>       
                 <ul>
-                    <li><a href="#"><div class="ins">S'inscrire</div></a></li>
-                    <li><a href="#Activités"><div class="act">Activités</div></a></li>
                     <li><a href="#Hébergements"><div class="hbg">Hébergements</div></a></li>
+                    <li><a href="#Activités"><div class="act">Activités</div></a></li>
+                    <li><a href="#"><div class="ins">S'inscrire</div></a></li>
                 </ul>
             </nav>
         </header>
@@ -39,19 +38,19 @@
                 <div class="logo-gps">
                 <i class="fas fa-map-marker-alt"></i></div>
                <input type="search" id="site-search" name="q"
-                placeholder=" Marseille, France">
+                placeholder="Marseille, France">
                 <a href="#" class="monBoutton">Rechercher</a>   
         </section>
         
         <!--Filters-->
         <section id="filters">
-            <h3 id=filters-title>Filtres</h3>
+            <h3 id="filters-title">Filtres</h3>
         
-                <div class=filters-all>
+                <div id="filters-all">
                 
                 <!--Dollars-->
-                <button class=button>
-                    <span class=logo-filter>
+                <button class="button">
+                    <span class="logo-filter">
                     <i class="fas fa-money-bill-wave icon"></i>
                     </span>
                     <span>&Eacute;conomique</span></button>
@@ -80,20 +79,17 @@
         </section>
         
         <!--info-->
-        <section id="info">
-            <div>
-                <span class=icon-info>
-                <i class="fas fa-info"></i></span>
-                <span><p>Plus de 500 logements sont disponibles dans cette ville</p></span>
+            <div class=info1>
+                <div class=icon-info>
+                <i class="fas fa-info"></i></div>
+                <div class="text"><p> Plus de 500 logements sont disponibles dans cette ville</p></div>
             </div>
-        </section>
         
-        <!--rooms-marseille-->
+        <!--rooms-Marseille-->
     <section id="rooms-left">
-        <div id="Hébergements"><h3>Hébergements à Marseille</h3></div>
-                    <div id="grid-left">
-
-                        <article class="photo-left"><a href="">
+        <div id="Hebergements"><h3>Hébergements à Marseille</h3></div>
+                    <div id="pics3">      
+                        <article class="photo-left1"><a href="">
                             <img alt="" src="images/hebergements/4_small/cannebiere.jpg">
                             <div class="text-left">
                                 <h4>Auberge la Cannebière</h4>
@@ -108,7 +104,7 @@
                                                             </div>
                         </a></article>
                         
-                        <article class="photo-left"><a href="">
+                        <article class="photo-left1"><a href="">
                             <img alt="" src="images/hebergements/4_small/port.jpg">
                             <div class="text-left">
                                 <h4>Hôtel du port</h4>
@@ -123,7 +119,7 @@
                             </div>
                         </a></article>
                 
-                        <article class="photo-left"><a href="">
+                        <article class="photo-left1"><a href="">
                             <img alt="" src="images/hebergements/4_small/mouette.jpg">
                             <div class="text-left">
                                 <h4>Hôtel Les mouettes</h4>
@@ -134,12 +130,12 @@
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star grey"></i>
-                                </div>
-                                
+                                </div> 
                             </div>
-                        </a></article>
+                        </a></article></div>
                         
-                        <article class="photo-left"><a href="">
+                    <div id="pics4">
+                        <article class="photo-left1"><a href="">
                             <img alt="" src="images/hebergements/4_small/mer.jpg">
                             <div class="text-left">
                                 <h4>Hôtel de la mer</h4>
@@ -155,7 +151,7 @@
                             </div>
                         </a></article>
                         
-                        <article class="photo-left"><a href="">
+                        <article class="photo-left1"><a href="">
                             <img alt="" src="images/hebergements/4_small/panier.jpg">
                             <div class="text-left">
                                 <h4>Auberge Le Panier</h4>
@@ -171,7 +167,7 @@
                             </div>
                         </a></article>
                         
-                        <article class="photo-left"><a href="">
+                        <article class="photo-left1"><a href="">
                             <img alt="" src="images/hebergements/4_small/amina.jpg">
                             <div class="text-left">
                                 <h4>Hôtel chez Amina</h4>
