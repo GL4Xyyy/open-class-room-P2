@@ -30,7 +30,7 @@ ul{
 
 .hbg{
     text-align: center;
-    width: 141px;
+    width: 8.5em;
     height: 100%;
     padding-top: 30%
 }
@@ -43,7 +43,7 @@ ul{
 
 .act{
     text-align: center;
-    width: 141px;
+    width: 8.5em;
     height: 100%;
     padding-top: 30%
 }
@@ -60,7 +60,7 @@ ul{
     font-weight: 600;
     width: 100%;
     text-align: center;
-    width: 141px;
+    width: 8.5em;
     height: 100%;
     padding-top: 30%
 }
@@ -72,7 +72,7 @@ ul{
     border-top-width: 2em;
     color: white;
     text-align: center;
-    width: 141px;
+    width: 8.5em;
     height: 60%;
     background-position: top 
 }
@@ -95,9 +95,9 @@ h1{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    height: 55px;
+    height: 3em;
     background-color: #F2F2F2;
-    width: 55px;
+    width: 3em;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;    
     font-size: 20px;
@@ -105,11 +105,11 @@ h1{
 
 #searching{
     display: flex;
-    height: 55px;
+    height: 3.7em;
 }
 
 #site-search{
-    width: 250px;
+    width: 13em;
     border: 0.5px #F2F2F2 solid;
     font-size: 130%;
     color: black
@@ -118,13 +118,13 @@ h1{
 .monBoutton{
     background-color: #0065FC;
     color:white;
-    width:150px;
+    width: 8em;
     text-align:center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 55px;
+    height: 2.8em;
     font-size: 130%;
-    line-height: 55px;
+    line-height: 3em;
     font-weight: bold;
   }
 
@@ -140,17 +140,17 @@ input::placeholder{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 3em;
 }
 
 #filters h3{
-    margin-right: 50px;
+    margin-right: 3em;
 }
 #filters-all {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 800px;
+    width: 60em;
 }
 
 .button{
@@ -217,4 +217,151 @@ input::placeholder{
 }
 
 
+/* Room Marseille */
 
+#rooms-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    width: 65%;
+}
+
+#Hébergements{
+    margin-left: 50px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.photo-left1{
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid white;
+    height: 245px
+}
+
+.text-left{
+    border-radius: 30px;
+    margin: -8px 5px 10px 9px;
+    line-height: 3px;
+}
+
+#img-mars{
+    height: 150px;
+    width: 300px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    object-fit: cover;
+}
+
+#pics3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blue{
+    color: #0065FC
+}
+
+.grey{
+    color: #F2F2F2
+}
+
+/* Afficher plus */
+
+#more{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;  
+    padding-bottom: 30px
+}
+
+
+/* Popular Marseille */
+
+
+
+.title-popular{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 40px 0px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#rooms-right{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    width: 30%;
+}
+
+.photo-right{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid white;
+    height: 150px;
+    width: 400px;
+    margin-right: 100px
+}
+
+#img-pop{
+    height: 150px;
+    width: 150px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    object-fit: cover;
+}
+
+.text-right{
+    border-radius: 30px;
+    margin: -8px 5px 10px 9px;
+    line-height: 3px;
+}
+
+#all-rooms{
+    display: flex;
+    justify-content: space-between;
+}
+
+#grid-right{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* iphone 8 */
+
+
+{ 
+
+@media(max-width: 375px)
+{  
+.hbg{
+    height: 150px;
+    width: 150px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    }
+}

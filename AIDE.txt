@@ -1,1 +1,0 @@
-Remarquez que quand la direction est en colonne, justify-content change pour la verticale et align-items pour l'horizontale.
