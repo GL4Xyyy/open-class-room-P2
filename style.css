@@ -1,6 +1,5 @@
 body{
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
 }
 
 a {
@@ -8,80 +7,110 @@ a {
     color: black;
 }
 
-/* Header */
-
-header{
-    display: flex; 
-    justify-content: space-between;
+h1{
+    line-height: 1em;
 }
 
-#img-logo-reservia{
-    height: 3.5em;
-    padding-top: 20%;
+
+h2{
+     font-size: 20px;
+}
+
+h3{
+    font-size: 23px;
+}
+
+h4{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 18px;
+ 
+}
+
+p{
+    font-size: 18px; 
 }
 
 ul{
-    margin-left: auto;
+    list-style: none
+}
+
+
+/* Header */
+
+header img{
+    height: 7vh;
+}
+
+nav{ 
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-top: auto
+}
+
+nav ul {
+    display: flex;
+}
+
+.ins{
+    
+}
+
+header{ 
+    display: flex;
+    justify-content: space-between;
 }
 
 .hbg{
     text-align: center;
     width: 8.5em;
-    height: 100%;
-    padding-top: 30%
+    padding-top: 15%;
 }
 
 .hbg:hover{
     border-top: 3px solid #0065FC;
-    color: #0065FC;
-    font-weight: 600;
 }
 
-.act{
+.hbg a:hover{
+    color: #0065FC;
+    font-weight: 600; 
+}
+
+.act{ 
     text-align: center;
     width: 8.5em;
-    height: 100%;
-    padding-top: 30%
+    padding-top: 15%;
 }
 
 .act:hover{
     border-top: 3px solid #0065FC;
-    color: #0065FC;
-    font-weight: 600;
-    background-position: top;
 }
 
-.ins{
+.act a:hover{
     color: #0065FC;
     font-weight: 600;
-    width: 100%;
-    text-align: center;
+}
+
+.ins a{
+    color: #0065FC;
+    font-weight: 600;
     width: 8.5em;
-    height: 100%;
-    padding-top: 30%
+    text-align: center;
 }
 
-.ins:hover{
+.ins a:hover{
     background-color: #0065FC;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-top-width: 2em;
     color: white;
-    text-align: center;
-    width: 8.5em;
-    height: 60%;
-    background-position: top 
 }
 
 
 /* Présentation */
 
 h1{
-    display: flex;
+    margin-top:2%;
     font-size: 150%;
     font-weight: 800;
 }
@@ -131,6 +160,9 @@ h1{
 input::placeholder{
     color: black;
     font-weight: bold
+}
+.loupe{
+    display: none
 }
 
 /* Filters */
@@ -248,7 +280,7 @@ input::placeholder{
     line-height: 3px;
 }
 
-#img-mars{
+.img-mars{
     height: 150px;
     width: 300px;
     border-top-left-radius: 30px;
@@ -256,7 +288,7 @@ input::placeholder{
     object-fit: cover;
 }
 
-#pics3{
+.pics3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -314,7 +346,7 @@ input::placeholder{
     margin-right: 100px
 }
 
-#img-pop{
+.img-pop{
     height: 150px;
     width: 150px;
     border-top-left-radius: 30px;
@@ -342,10 +374,13 @@ input::placeholder{
     width: 100%;
 }
 
-
-
-
-
+.img-down{
+    height: 150px;
+    width: 150px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    object-fit: cover;
+}
 
 
 
@@ -353,15 +388,15 @@ input::placeholder{
 
 /* iphone 8 */
 
-
-{ 
-
-@media(max-width: 375px)
-{  
-.hbg{
-    height: 150px;
-    width: 150px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+@media screen and (max-width: 375px){
+    
+    
+    
+    .monBoutton{
+        display: none
+    }
+    
+    .loupe{
+        display: contents; 
     }
 }
