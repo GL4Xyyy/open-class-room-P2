@@ -1,5 +1,6 @@
 body{
-    margin: 0 auto;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -41,69 +42,66 @@ ul{
 
 /* Header */
 
-header img{
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+img{
     height: 7vh;
 }
 
-nav{ 
+ul{
+    margin:0;
     display: flex;
 }
 
-nav ul {
-    display: flex;
-}
-
-.ins{
-    
-}
-
-header{ 
-    display: flex;
-    justify-content: space-between;
-}
-
-.hbg{
-    text-align: center;
+#hbg{
     width: 8.5em;
-    padding-top: 15%;
-}
-
-.hbg:hover{
-    border-top: 3px solid #0065FC;
-}
-
-.hbg a:hover{
-    color: #0065FC;
-    font-weight: 600; 
-}
-
-.act{ 
     text-align: center;
-    width: 8.5em;
-    padding-top: 15%;
+    height: 5vh;
+    padding-top: 30%; 
 }
 
-.act:hover{
+#hbg:hover{
     border-top: 3px solid #0065FC;
-}
-
-.act a:hover{
     color: #0065FC;
     font-weight: 600;
 }
 
-.ins a{
+
+#act{ 
+    width: 8.5em;
+    text-align: center;
+    height: 5vh;
+    padding-top: 30%;
+}
+
+#act:hover{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    font-weight: 600;
+}
+
+#ins{
     color: #0065FC;
     font-weight: 600;
     width: 8.5em;
     text-align: center;
+    height: 5vh;
+    padding-top: 30%;
 }
 
-.ins a:hover{
+#ins:hover{
     background-color: #0065FC;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     color: white;
+}
+
+#ins2{
+    visibility: hidden;
 }
 
 
@@ -390,7 +388,74 @@ input::placeholder{
 
 @media screen and (max-width: 375px){
     
+    header{
+        flex-wrap: wrap;
+        font-size: 1.1em
+    } 
     
+    nav{
+        width: 100%;
+        
+    }
+    ul{
+       border-bottom: 3px solid #F2F2F2; 
+    }
+    #hbg{
+        width: 8.5em;
+        height: 5vh;
+        padding-top: 10%; 
+    }
+
+    #hbg:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        font-weight: 600;
+    }
+
+
+    #act{ 
+        width: 8.5em;
+        height: 5vh;
+        padding-top: 10%;
+    }
+
+    #act:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        font-weight: 600;
+    }
+    
+    #ins{
+        display: none
+    }
+    
+    #ins2{
+    visibility: visible;
+    color: #0065FC;
+    font-weight: 600;
+    width: 8.5em;
+    text-align: center;
+    height: 5vh;
+    padding-top: 30%;
+    }
+    
+    #ins2:hover{
+    background-color: #0065FC;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+}
+   #responsive{
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+    }
+    img{
+        padding-top: 6%
+    }
+
     
     .monBoutton{
         display: none
