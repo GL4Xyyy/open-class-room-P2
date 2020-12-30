@@ -1,12 +1,14 @@
 body{
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1650px;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 
-*{
-    margin:0
-    }
+main{
+    padding-left: 35px;
+    padding-right: 35px;
+}
 
 a {
     text-decoration: none;
@@ -27,9 +29,8 @@ h3{
 }
 
 h4{
-    font-size: 23px;
+    font-size: 19px;
     font-weight: 700;
-    line-height: 100%;
 }
 
 h5{
@@ -51,9 +52,11 @@ ul{
 header{
     display: flex;
     justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
-img{
+header img{
     height: 7vh;
 }
 
@@ -65,7 +68,8 @@ ul{
 #hbg{
     width: 8.5em;
     text-align: center;
-    padding-top: 30%; 
+    padding-top: 30%;
+    border-top: 3px solid transparent; 
 }
 
 #hbg:hover{
@@ -74,11 +78,11 @@ ul{
     font-weight: 600;
 }
 
-
 #act{ 
     width: 8.5em;
     text-align: center;
     padding-top: 30%;
+    border-top: 3px solid transparent;
 }
 
 #act:hover{
@@ -93,6 +97,7 @@ ul{
     width: 8.5em;
     text-align: center;
     padding-top: 30%;
+    border-top: 3px solid transparent;
 }
 
 #ins:hover{
@@ -100,7 +105,7 @@ ul{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     color: white;
-    height: 5vh;
+    height: 4vh;
 }
 
 #ins2{
@@ -116,7 +121,6 @@ h1{
 }
 #presentation, p{
     font-size: 105%;
-    margin-top: 2%;
 }
 
 /* Search */
@@ -203,7 +207,7 @@ input::placeholder{
 .logo-filter{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #DEEBFF;
     border-radius: 100%; 
     margin-left: -7px;
@@ -259,19 +263,18 @@ input::placeholder{
     justify-content: space-between;
     border-radius: 30px;
     background-color: #F2F2F2;
-    width: 65%;
+    width: 67%;
 }
 
 #Hébergements{
     margin-left: 50px;
     font-weight: 900;
     font-size: 20px;
-    padding-top: 3%;
+    padding-top: 1%;
 }
 
 .photo-left1{
     max-width: 375px;
-    height: 27vh;
     margin-left: auto;
     margin-right: auto;
     color: black;
@@ -279,22 +282,21 @@ input::placeholder{
     border-radius: 30px;
     border: 5px solid white;
     margin-bottom: 3%;
-    box-shadow: 1px 1px 15px rgb(111, 111, 111);
+    width: 30%;
+    box-shadow: 0px 0px 10px 4px rgba(232, 225, 225, 0.75);
 }
 
 .text-left{
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    line-height: 3px;
+    margin: -8px 5px 10px 9px;
 }
 
 .img-mars{
-    height: 18vh;
     width: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     object-fit: cover;
+    height: 145px;
 }
 
 .pics3{
@@ -302,7 +304,7 @@ input::placeholder{
     justify-content: space-around;
     flex-wrap: wrap;
     height: 100%;
-    padding-top: 3%;
+    padding-top: 1%;
 }
 
 .blue{
@@ -342,9 +344,11 @@ input::placeholder{
     width: 30%;
 }
 
-.photo-right {
+.photo-right{ 
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    height: 30%;
+    width: 100%;
 }
 
 .photo-right a{
@@ -353,14 +357,11 @@ input::placeholder{
     background-color: white;
     border-radius: 30px;
     border: 5px solid white;
-    height: 15vh;
-    width: 80%;
-    
 }
 
 .img-pop{
-    height: 15vh;
-    width: 15vh;
+    width: 40%;
+    height: 100%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     object-fit: cover;
@@ -370,12 +371,22 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 3%;
+}
+
+.text-right h4{
+    margin-top: -5px;
+}
+
+.text-right p{
+    margin-top: -30px;
 }
 
 #all-rooms{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    height: 46em;
 }
 
 #grid-right{
@@ -384,9 +395,7 @@ input::placeholder{
     justify-content: space-around;
     align-content: center;
     height: 100%;
-}
-
-.star-right{
+    padding: 10px 35px 30px;
 }
 
 
@@ -404,7 +413,7 @@ input::placeholder{
 }
 
 .text-down{
-    padding: 3% 0 4% 3%;
+    padding: 0 0 1% 3%;
     box-shadow: 1px 2px 10px #F2F2F2;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -420,7 +429,7 @@ input::placeholder{
     border-top-right-radius: 30px;
     object-fit: cover;
     height: 50vh;
-    width: 43vh;
+    width: 35vh;
 }
 
 
@@ -429,11 +438,11 @@ input::placeholder{
     border-top-right-radius: 30px;
     object-fit: cover;
     height: 20vh;
-    width: 43vh;
+    width: 35vh;
 }
 
 .text-down-2{
-    padding: 3% 0 4% 3%;
+    padding: 0 0 1% 3%;
     box-shadow: 1px 2px 10px #F2F2F2;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -480,8 +489,16 @@ input::placeholder{
 
 /* iphone 8 */
 
-@media screen and (max-width: 900px){
-    
+@media screen and (max-width: 1024px){
+
+    main{
+        padding: 0;
+    }
+
+    header{
+        padding: 0;
+    }
+
      h2{
         font-size: 15px;
     }
@@ -506,6 +523,10 @@ input::placeholder{
     
     /* Header */
     
+    header img{
+        margin-left: 19px;
+    }
+
     #none{
         display: none;
     }  
@@ -524,7 +545,7 @@ input::placeholder{
         width: 50%;
         padding: 2% 0;
     }
-    
+
     #hbg{
         border-bottom: 3px solid #cecece;
         width: 100%;
@@ -537,8 +558,7 @@ input::placeholder{
     }
 
     #hbg:hover{
-        width: 100%;
-        border-top: none;
+        border-top: 3px solid transparent;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
         font-weight: 600;
@@ -546,13 +566,12 @@ input::placeholder{
     
     #act{ 
         border-bottom: 3px solid #cecece;
-        width: 100%;
-        padding: 2vh
+        width: 86%;
+        padding: 2vh;
     }
 
     #act:hover{
-        width: 100%;
-        border-top: none;
+        border-top: 3px solid transparent;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
         font-weight: 600;
@@ -587,14 +606,15 @@ input::placeholder{
     
     /* Présentation */
     
-    #presentation, p{
-        padding-top: 3%
+    #presentation{
+        padding-left: 2%;
     }
     
     /* Search */
     
     #searching{
         padding-top: 3%;
+        padding-left: 2%;
     }
     
     .monBoutton{
@@ -612,18 +632,29 @@ input::placeholder{
         border-radius: 30%;
         background-color: #0065FC;
         color: white;
-        width: 15%;
+        width: 10vh;
         font-size: 20px;
     }
     
     /* Filters */
     
+    #filters-all{
+        justify-content: flex-start;
+    }
+
     .button{
-        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-right: 3%;
     }
     
     #filters{
-        margin-top: 3%
+        margin-top: 3%;
+        padding-left: 2%;
+        width: auto;
+    }
+
+    .info1{
+        padding-left: 2%;
     }
     
     /* Popular-marseille */
@@ -632,6 +663,7 @@ input::placeholder{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        height: auto;
     }
     
     #rooms-right{
@@ -641,16 +673,22 @@ input::placeholder{
     }
     
     .photo-right{
-        width: 60%;
+        width: 100%;
         height: 20vh;
     }
     
     .photo-right a{
         height: 20vh;
+        width: 100%;
     }
     
     .img-pop{
         height: 20vh;
+        width: 45%;
+    }
+
+    #grid-right{
+        padding: 0 3%;
     }
     
     /* Rooms-marseille */
@@ -658,28 +696,35 @@ input::placeholder{
     #rooms-left{
         width: 100%;
         background-color: white;
-        padding-top: 3%;
     }
     
     .photo-left1 {
         height:auto;
+        max-width: none;
+        width: 100%;
     }
     
     .pics3{
-        padding-top: 3%;
+        padding: 0 3%;
     }
     
     /* Activity */
     
+    #Activités{
+        padding: 0 3%;
+    }
+
     .allactivity{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding-top: 3%
+        padding: 0 3%;
     }
     
     .photo-down-left{
+        border-radius: 30px;
         padding: 0;
+        box-shadow: 0px 0px 10px 4px rgba(232, 225, 225, 0.75);
     }
     
     .photo-down-right{
@@ -702,6 +747,16 @@ input::placeholder{
     .img-down{
         width: 100%;
     }
+
+    .text-down{
+        padding: 0 0 5% 2%;
+        height: 20px;
+    }
+
+    .text-down-2{
+        padding: 0 0 5% 2%;
+        height: 20px;
+    }
     
     /* Footer */
     
@@ -711,22 +766,15 @@ input::placeholder{
     
     .footer-down{
         height: 100vh;
-        width: 100%;
         display: flex;
         flex-direction: column;
         padding-left: 3%;
+        line-height: 30px;
     }
     
     .title{
         padding-top: 3%
     }     
-}
-    
-@media screen and (max-width: 450px){
-    
-    .photo-right{
-        width: 80%;
-    } 
 }
 
 @media screen and (min-width: 900px) and (max-width: 1440px){
@@ -734,13 +782,20 @@ input::placeholder{
     .allactivity{
         flex-wrap: wrap; 
     }
-    
-    #rooms-right{
-        width: 45%;
-    }
-    
-    #rooms-left{
-        width: 50%;
-    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    #act{
+        width: 91%
+    }
+    .text-down{
+        padding: 0 0 5% 2%;
+        height: 0;
+    }
+
+    .text-down-2{
+        padding: 0 0 5% 2%;
+        height: 0;
+    }
+}
