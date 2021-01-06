@@ -131,7 +131,7 @@ h1{
 
 /* Search */
 
-.logo-gps{ 
+#logo-gps{ 
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -155,7 +155,7 @@ h1{
     color: black
 }
 
-.monBoutton{
+#monBoutton{
     background-color: #0065FC;
     color:white;
     width: 8em;
@@ -245,7 +245,7 @@ input::placeholder{
     margin-bottom: 35px;
 }
 
-.icon-info{
+#icon-info{
     display: flex;   
     align-items: center;
     justify-content: space-evenly;
@@ -257,7 +257,7 @@ input::placeholder{
    
 }
 
-.text p{
+#text p{
     margin-left: 10px
 }
 
@@ -412,7 +412,7 @@ input::placeholder{
     font-weight: bold;
     font-size: 20px;
     margin-left: 50px;  
-    padding-bottom: 30px
+    padding-bottom: 30px;
 }
 
 /* ---------------------------------------- */
@@ -446,6 +446,7 @@ input::placeholder{
 
 
 .text-down{
+    margin: 0;
     padding: 5% 5% 5% 3%;
     box-shadow: 1px 2px 10px #F2F2F2;
     border-bottom-left-radius: 30px;
@@ -457,6 +458,7 @@ input::placeholder{
 }
 
 .text-down-2{
+    margin: 0;
     padding: 5% 5% 5% 3%;
     box-shadow: 1px 2px 10px #F2F2F2;
     border-bottom-left-radius: 30px;
@@ -512,7 +514,7 @@ input::placeholder{
 /*---------------------------------------- */
 
 
-.footer-down {
+footer{
     display: flex;
     justify-content: space-around;
     background-color: #F2F2F2;
@@ -533,6 +535,7 @@ input::placeholder{
     flex-direction: column;
     justify-content: space-evenly;
     height: 60vh;
+    line-height: 3vh;
 }
 
 /* ---------------------------------------- */
@@ -645,7 +648,7 @@ input::placeholder{
         padding-left: 2%;
     }
     
-    .monBoutton{
+    #monBoutton{
         display: none
     }
     
@@ -811,7 +814,7 @@ input::placeholder{
         width: 100%;
     }
     
-    .footer-down{
+    footer{
         height: 100vh;
         display: flex;
         flex-direction: column;
