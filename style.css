@@ -1,3 +1,15 @@
+/* ---------------------------------------- */
+/* ==       COLOR CODES           */
+/*---------------------------------------- */
+/*
+Blue : #0065FC
+Light blue : #DEEBFF 
+Grey : #F2F2F2
+*/
+
+
+
+
 body{
     margin: 0 auto;
     max-width: 1650px;
@@ -46,8 +58,10 @@ ul{
     list-style: none
 }
 
+/* ---------------------------------------- */
+/* ==            HEADER                */
+/*---------------------------------------- */
 
-/* Header */
 
 header{
     display: flex;
@@ -61,34 +75,25 @@ header img{
 }
 
 ul{
-    margin:0;
+    margin: 0;
     display: flex;
 }
 
-#hbg{
+.menu-right{
     width: 8.5em;
     text-align: center;
-    padding-top: 30%;
+    padding-top: 10%;
     border-top: 3px solid transparent; 
 }
 
-#hbg:hover{
-    border-top: 3px solid #0065FC;
+.menu-right a:hover{
     color: #0065FC;
-    font-weight: 600;
 }
 
-#act{ 
-    width: 8.5em;
-    text-align: center;
-    padding-top: 30%;
-    border-top: 3px solid transparent;
-}
-
-#act:hover{
+.menu-right:hover{
     border-top: 3px solid #0065FC;
-    color: #0065FC;
     font-weight: 600;
+    color: #0065FC;
 }
 
 #ins{
@@ -113,7 +118,10 @@ ul{
 }
 
 
-/* Présentation */
+/* ---------------------------------------- */
+/* ==            PRÉSENTATION                */
+/*---------------------------------------- */
+
 
 h1{
     font-size: 150%;
@@ -129,7 +137,6 @@ h1{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    height: 3em;
     background-color: #F2F2F2;
     width: 3em;
     border-top-left-radius: 20px;
@@ -157,7 +164,6 @@ h1{
     text-align:center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 2.8em;
     font-size: 130%;
     line-height: 3em;
     font-weight: bold;
@@ -171,7 +177,10 @@ input::placeholder{
     display: none
 }
 
-/* Filters */
+/* ---------------------------------------- */
+/* ==            FILTERS               */
+/*---------------------------------------- */
+
 
 #filters{
     display: flex;
@@ -181,15 +190,20 @@ input::placeholder{
     margin-top: 3em;
 }
 
-#filters h3{
-    margin-right: 3em;
-}
 #filters-all {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 60em;
 }
+
+#filters-title{
+    font-weight: 800;
+    font-size: 23px;
+    padding-right: 3%;
+}
+
+    /*     Button     */
 
 .button{
     display: flex;
@@ -224,12 +238,7 @@ input::placeholder{
     font-size: 1.2rem;
 }
 
-#filters-title{
-    font-weight: 800;
-    font-size: 23px;
-}
-
-/* Info */
+    /*      Info      */
 
 .info1{
     display: flex;
@@ -254,86 +263,15 @@ input::placeholder{
     margin-left: 10px
 }
 
+/* ---------------------------------------- */
+/* ==            POPULAR MARSEILLE             */
+/*---------------------------------------- */
 
-/* Room Marseille */
-
-#rooms-left{
+#all-rooms{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    border-radius: 30px;
-    background-color: #F2F2F2;
-    width: 67%;
-}
-
-#Hébergements{
-    margin-left: 50px;
-    font-weight: 900;
-    font-size: 20px;
-    padding-top: 1%;
-}
-
-.photo-left1{
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
-    background-color: white;
-    border-radius: 30px;
-    border: 5px solid white;
-    margin-bottom: 3%;
-    width: 30%;
-    box-shadow: 0px 0px 10px 4px rgba(232, 225, 225, 0.75);
-}
-
-.text-left{
-    line-height: 3px;
-    margin: -8px 5px 10px 9px;
-}
-
-.img-mars{
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    object-fit: cover;
-    height: 145px;
-}
-
-.pics3{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    height: 100%;
-    padding-top: 1%;
-}
-
-.blue{
-    color: #0065FC
-}
-
-.grey{
-    color: #F2F2F2
-}
-
-/* Afficher plus */
-
-#more{
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 50px;  
-    padding-bottom: 30px
-}
-
-
-/* Popular Marseille */
-
-.title-popular{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 40px 0px;
-    font-weight: 900;
-    font-size: 20px;
+    flex-direction: row-reverse;
+    height: 46em;
 }
 
 #rooms-right{
@@ -344,11 +282,32 @@ input::placeholder{
     width: 30%;
 }
 
+    /*      Title      */
+
+.title-popular{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px 0px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+    /*      Container image    */
+
+#grid-right{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: 100%;
+}
+
 .photo-right{ 
     display: flex;
     justify-content: space-around;
     height: 30%;
-    width: 100%;
+    width: 80%;
 }
 
 .photo-right a{
@@ -382,28 +341,98 @@ input::placeholder{
     margin-top: -30px;
 }
 
-#all-rooms{
+/* ---------------------------------------- */
+/* ==            ROOM MARSEILLE             */
+/*---------------------------------------- */
+
+#rooms-left{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-direction: row-reverse;
-    height: 46em;
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    width: 67%;
+}
+    /*      Title      */
+
+#Hébergements{
+    margin-left: 50px;
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 1%;
 }
 
-#grid-right{
+    /*      Container image     */
+
+#pics3{
     display: flex;
-    flex-flow: column wrap;
     justify-content: space-around;
-    align-content: center;
+    flex-wrap: wrap;
     height: 100%;
-    padding: 10px 35px 30px;
+    padding-top: 1%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.photo-left1{
+    max-width: 375px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid white;
+    margin-bottom: 3%;
+    width: 30%;
+    box-shadow: 0px 0px 10px 4px rgba(232, 225, 225, 0.75);
 }
 
+.text-left{
+    line-height: 3px;
+    margin: -8px 5px 10px 9px;
+}
 
-/* Activity */
+.img-mars{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    object-fit: cover;
+    height: 145px;
+}
+
+.blue{
+    color: #0065FC
+}
+
+.grey{
+    color: #F2F2F2
+}
+
+    /*      Afficher plus     */
+
+#more{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;  
+    padding-bottom: 30px
+}
+
+/* ---------------------------------------- */
+/* ==            ACTIVITY                */
+/*---------------------------------------- */
+
+    /*      Title     */
+
+#Activités{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+/*      Container image     */
 
 .allactivity{
     display: flex;
     justify-content: space-between;
+    box-shadow: 1px 2px 10px #F2F2F2;
 }
 
 .photo-down{
@@ -417,10 +446,6 @@ input::placeholder{
     width: 22%;
 }
 
-#Activités{
-    padding-top: 3%;
-    padding-bottom: 1%;
-}
 
 .text-down{
     padding: 5% 5% 5% 3%;
@@ -429,10 +454,19 @@ input::placeholder{
     border-bottom-right-radius: 30px;
 }
 
-.all-activity{
-    display: flex;
-    justify-content: space-between;
+.text-down h4{
+    margin: 0;
+}
+
+.text-down-2{
+    padding: 5% 5% 5% 3%;
     box-shadow: 1px 2px 10px #F2F2F2;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.text-down-2 h4{
+    margin: 0;
 }
 
 .img-down-height{
@@ -441,14 +475,6 @@ input::placeholder{
     object-fit: cover;
     height: 500px;
     width: 100%;
-}
-
-.text-down h4{
-    margin:0;
-}
-
-.text-down-2 h4{
-    margin:0;
 }
 
 #img-pomegues{
@@ -483,14 +509,10 @@ input::placeholder{
     width: 100%;
 }
 
-.text-down-2{
-    padding: 5% 5% 5% 3%;
-    box-shadow: 1px 2px 10px #F2F2F2;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
+/* ---------------------------------------- */
+/* ==            FOOTER                */
+/*---------------------------------------- */
 
-/* Footer */
 
 .footer-down {
     display: flex;
@@ -515,9 +537,9 @@ input::placeholder{
     height: 60vh;
 }
 
-/* Media Queries */
-
-/* iphone 8 */
+/* ---------------------------------------- */
+/* ==       MEDIAS QUERIS        */
+/*---------------------------------------- */
 
 @media screen and (max-width: 1024px){
 
@@ -570,13 +592,8 @@ input::placeholder{
         width: 100%;
         padding: 0;
     }
-    
-    header ul li{
-        width: 50%;
-        padding: 2% 0;
-    }
 
-    #hbg{
+    .menu-right{
         border-bottom: 3px solid #cecece;
         width: 100%;
         padding: 2vh
@@ -587,26 +604,13 @@ input::placeholder{
         width: 100%;
     }
 
-    #hbg:hover{
+    .menu-right:hover{
         border-top: 3px solid transparent;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
         font-weight: 600;
-    }
-    
-    #act{ 
-        border-bottom: 3px solid #cecece;
-        width: 86%;
-        padding: 2vh;
     }
 
-    #act:hover{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid #0065FC;
-        color: #0065FC;
-        font-weight: 600;
-    }
-    
     #ins2{
         visibility: visible;
         color: #0065FC;
@@ -829,7 +833,7 @@ input::placeholder{
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
     #act{
-        width: 91%
+        width: 93.2%
     }
     .text-down{
         padding: 0 0 5% 2%;
