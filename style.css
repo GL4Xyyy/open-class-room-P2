@@ -152,7 +152,8 @@ h1{
     width: 13em;
     border: 0.5px #F2F2F2 solid;
     font-size: 130%;
-    color: black
+    color: black;
+    padding-left: 10px;
 }
 
 #monBoutton{
@@ -234,6 +235,7 @@ input::placeholder{
 
 .button span{
     font-size: 1.2rem;
+    margin-right: 5px;
 }
 
     /*      Info      */
@@ -254,6 +256,7 @@ input::placeholder{
     border-radius: 50%;
     color:#0065FC;
     border: #F2F2F2 2px solid;
+    margin-right: 10px;
    
 }
 
@@ -356,7 +359,6 @@ input::placeholder{
 
 #Hébergements{
     margin-left: 50px;
-    font-weight: 900;
     font-size: 20px;
     padding-top: 1%;
 }
